@@ -354,7 +354,7 @@ var RobotArm = function (canvas) {
     self.loadLevel = function(levelName) {
         switch (levelName) {
             case "exercise 1":
-                self.setMap([[], ["red"]]);
+                self.setMap([[], ["green"]]);
                 break;
             case "exercise 2":
                 self.setMap([["blue"], [] ,[], [], ["blue"], [], [], ["blue"]]);
@@ -390,7 +390,7 @@ var RobotArm = function (canvas) {
                 break;
             case "exercise 9":
                 self.setMap([
-                    ["blue"],
+                    ["orange"],
                     ["green", "green"],
                     ["white", "white", "white"],
                     ["red", "red", "red", "red"]

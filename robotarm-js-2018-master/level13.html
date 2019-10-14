@@ -12,9 +12,23 @@
             
             // Jou instructies volgen hier
             robotArm.speed = 300;
-            for(var o = 0; o<=4; o++){
+            var afstand = 1
             robotArm.grab();
-          }
+            var scan = robotArm.scan();
+            while (scan != null){
+              for( i=1; i<=afstand; i++){
+                robotArm.moveRight();
+              }
+            robotArm.drop();
+            for( i=1; i<=afstand; i++){
+                robotArm.moveLeft();
+              }
+            robotArm.grab();
+            var scan = robotArm.scan();
+            afstand++;
+
+            }
+            
            
 
 

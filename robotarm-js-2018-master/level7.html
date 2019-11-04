@@ -12,16 +12,16 @@
             
             // Jou instructies volgen hier
             robotArm.speed = 4000;
-            for(j=0; j<6; j++){
-            for(i=0; i<6; i++){
-            robotArm.moveRight();
-            robotArm.grab();
-            robotArm.moveLeft();
-            robotArm.drop();
-        }
-            robotArm.moveRight();
-            robotArm.moveRight();
-        }
+            for(j=0; j<5; j++){
+                for(i=0; i<6; i++){
+                    robotArm.moveRight();
+                    robotArm.grab();
+                    robotArm.moveLeft();
+                    robotArm.drop();
+                }
+                robotArm.moveRight();
+                robotArm.moveRight();
+            }
             
 
 

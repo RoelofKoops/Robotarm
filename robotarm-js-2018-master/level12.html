@@ -13,160 +13,26 @@
             // Jou instructies volgen hier
             //blok 1
             robotArm.speed = 600;
+        for(var u=0; u<9; u++){
             robotArm.grab();
             color = robotArm.scan();
             if (color == 'red'){
-                for(i=0; i<9; i++){
+                for(i=0; i<(9-u); i++){
                     robotArm.moveRight();
                 }
                 robotArm.drop();
-                for(i=0; i<8; i++){
+                for(i=0; i<(8-u); i++){
                 robotArm.moveLeft();
                 }
-
-            }
-            else{
+        }
+        else{
                 robotArm.drop();
                 robotArm.moveRight();
             }
+            } 
 
-            //blok 2
-              robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<8; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<7; i++){
-                robotArm.moveLeft();
-                }
+           
 
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 3
-              robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<7; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<6; i++){
-                robotArm.moveLeft();
-                }
-
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 4
-              robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<6; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<5; i++){
-                robotArm.moveLeft();
-                }
-
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 5
-              robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<5; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<4; i++){
-                robotArm.moveLeft();
-                }
-
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 6
-              robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<4; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<3; i++){
-                robotArm.moveLeft();
-                }
-
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 7
-                 robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<3; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                for(i=0; i<2; i++){
-                robotArm.moveLeft();
-                }
-
-            }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-
-            //blok 8
-
-                 robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<2; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                robotArm.moveLeft();
-                }
-            else{
-                robotArm.drop();
-                robotArm.moveRight();
-            }
-            
-            //blok 9
-                  robotArm.grab();
-            color = robotArm.scan();
-            if (color == 'red'){
-                for(i=0; i<1; i++){
-                    robotArm.moveRight();
-                }
-                robotArm.drop();
-                }
-
-            else{
-                robotArm.drop();
-            }
             
             
             // De door jou opgegeven instructies uitvoeren
